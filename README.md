@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688.svg)](https://fastapi.tiangolo.com/)
+[![Groq](https://img.shields.io/badge/Groq-LPU%20Inference-f55036.svg)](https://groq.com/)
 [![Twilio](https://img.shields.io/badge/Twilio-Voice%20API-red.svg)](https://www.twilio.com/)
 [![Plivo](https://img.shields.io/badge/Plivo-Voice%20API-00B272.svg)](https://www.plivo.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -121,12 +122,13 @@ cp .env.example .env
 
 | Key | Description | Example |
 | :--- | :--- | :--- |
+| `GROQ_API_KEY` | Groq API Key for ultra-fast LPU intent & date extraction (`openai/gpt-oss-120b`) | `gsk_...` |
 | `TELEPHONY_PROVIDER` | Active engine (`twilio`, `plivo`, `browser`, `simulation`) | `twilio` |
 | `TWILIO_ACCOUNT_SID` | Your Twilio Account SID | `AC7f966c...` |
 | `TWILIO_AUTH_TOKEN` | Your Twilio Auth Token | `f1b5aea0...` |
 | `TWILIO_PHONE_NUMBER` | Your Twilio outbound phone number | `+17372508034` |
 | `PUBLIC_WEBHOOK_URL` | Public base URL for Twilio/Plivo webhooks | `https://handler.twilio.com` |
-| `OPENAI_API_KEY` | Optional OpenAI key for semantic extraction | `sk-...` |
+| `OPENAI_API_KEY` | Optional OpenAI key for secondary fallback | `sk-...` |
 
 ---
 

@@ -733,6 +733,13 @@ async function loadSettings() {
         document.getElementById("settingPlivoPhone").value = s.PLIVO_PHONE_NUMBER || "";
         document.getElementById("settingWebhookUrl").value = s.PUBLIC_WEBHOOK_URL || "";
         
+        if (s.GROQ_API_KEY_MASKED) {
+            document.getElementById("settingGroqKey").placeholder = `Configured (${s.GROQ_API_KEY_MASKED})`;
+        }
+        if (s.OPENAI_API_KEY) {
+            document.getElementById("settingOpenAIKey").placeholder = "Configured (sk-...)";
+        }
+        
         toggleProviderFields();
     } catch (e) {
         console.error("Failed to load settings:", e);
@@ -751,6 +758,7 @@ async function saveSettings() {
     const plivoPhone = document.getElementById("settingPlivoPhone").value.trim();
 
     const webhook = document.getElementById("settingWebhookUrl").value.trim();
+    const groqKey = document.getElementById("settingGroqKey").value.trim();
     const openaiKey = document.getElementById("settingOpenAIKey").value.trim();
 
     const payload = {
@@ -763,6 +771,7 @@ async function saveSettings() {
     };
     if (twilioToken) payload.TWILIO_AUTH_TOKEN = twilioToken;
     if (plivoToken) payload.PLIVO_AUTH_TOKEN = plivoToken;
+    if (groqKey) payload.GROQ_API_KEY = groqKey;
     if (openaiKey) payload.OPENAI_API_KEY = openaiKey;
 
     try {

@@ -539,9 +539,17 @@
                     <p class="text-[11px] text-slate-500 mt-0.5">Required for Twilio/Plivo to reach your local server.</p>
                 </div>
                 <div>
+                    <label class="block text-slate-400 mb-1 font-medium flex items-center justify-between">
+                        <span>⚡ Groq API Key (High-Speed LPU Inference)</span>
+                        <span class="text-[10px] text-emerald-400 font-semibold bg-emerald-500/10 px-1.5 py-0.5 rounded">Active Engine</span>
+                    </label>
+                    <input type="password" id="settingGroqKey" placeholder="gsk_..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-white font-mono">
+                    <p class="text-[11px] text-slate-500 mt-0.5">Ultra-fast conversational intent extraction via <code class="text-sky-400 font-mono">openai/gpt-oss-120b</code> on Groq.</p>
+                </div>
+                <div>
                     <label class="block text-slate-400 mb-1 font-medium">OpenAI API Key (Optional)</label>
                     <input type="password" id="settingOpenAIKey" placeholder="sk-..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-white font-mono">
-                    <p class="text-[11px] text-slate-500 mt-0.5">Built-in smart conversational NLP analyzer is used if omitted.</p>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Secondary fallback LLM if Groq is not configured.</p>
                 </div>
             </div>
 

@@ -119,7 +119,7 @@ def rule_based_extract(speech_text: str, student_name: str, pending_amount: floa
         "bot_reply": "Thank you. We have noted your response and our administrative staff will follow up with you. Goodbye!"
     }
 
-def analyze_caller_speech(speech_text: str, student_name: str, pending_amount: float, openai_key: str = "") -> Dict[str, Any]:
+def analyze_caller_speech(speech_text: str, student_name: str, pending_amount: float, api_key: str = "") -> Dict[str, Any]:
     if not speech_text or len(speech_text.strip()) == 0:
         return {
             "outcome": "UNREACHABLE",
@@ -129,16 +129,79 @@ def analyze_caller_speech(speech_text: str, student_name: str, pending_amount: f
             "bot_reply": "We did not receive any response. We will follow up later. Thank you."
         }
 
-    # If OpenAI API Key is present, try LLM extraction with structured JSON
+    # Import get_setting safely to check DB settings
+    try:
+        from app.database import get_setting
+        db_groq_key = get_setting("GROQ_API_KEY", "")
+        db_openai_key = get_setting("OPENAI_API_KEY", "")
+    except Exception:
+        db_groq_key = ""
+        db_openai_key = ""
+
+    groq_key = os.getenv("GROQ_API_KEY") or db_groq_key or (api_key if api_key.startswith("gsk_") else "")
+    openai_key = api_key or os.getenv("OPENAI_API_KEY") or db_openai_key
+
+    today_str = datetime.now().strftime("%Y-%m-%d, %A")
+
+    # 1. Try Groq Cloud (Ultra-Fast LPU Inference)
+    if groq_key and len(groq_key.strip()) > 10:
+        try:
+            import requests, json
+            headers = {
+                "Authorization": f"Bearer {groq_key.strip()}",
+                "Content-Type": "application/json"
+            }
+            prompt = (
+                f"You are a fee collection conversational intent analyzer for an educational institute.\n"
+                f"Today's Date: {today_str}.\n"
+                f"Student: {student_name}, Pending Amount: Rs. {pending_amount}.\n"
+                f"Caller spoke: '{speech_text}'.\n\n"
+                f"Extract in JSON with keys:\n"
+                f"- outcome: exactly one of ['ALREADY_PAID', 'PROMISE_TO_PAY', 'EXTENSION_REQUEST', 'DISPUTED', 'WRONG_NUMBER', 'UNCLEAR']\n"
+                f"- tentative_pay_date: 'YYYY-MM-DD' (calculate exact date relative to Today {today_str}) or null\n"
+                f"- summary_notes: concise 1-sentence note stating intent, date, and payment method if mentioned\n"
+                f"- manual_followup: true or false\n"
+                f"- bot_reply: polite, short closing statement acknowledging caller's specific reply."
+            )
+            
+            # Supported Groq models in order of priority
+            models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"]
+            for model_name in models:
+                payload = {
+                    "model": model_name,
+                    "messages": [
+                        {"role": "system", "content": "You are a professional payment analytics assistant. Return valid JSON only."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    "response_format": {"type": "json_object"},
+                    "temperature": 0.1
+                }
+                res = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=8)
+                if res.status_code == 200:
+                    data = res.json()["choices"][0]["message"]["content"]
+                    parsed = json.loads(data)
+                    return {
+                        "outcome": parsed.get("outcome", "UNCLEAR"),
+                        "tentative_pay_date": parsed.get("tentative_pay_date"),
+                        "summary_notes": parsed.get("summary_notes", speech_text),
+                        "manual_followup": 1 if parsed.get("manual_followup") else 0,
+                        "bot_reply": parsed.get("bot_reply", "Thank you. We have recorded your response. Goodbye!"),
+                        "engine": f"Groq ({model_name})"
+                    }
+        except Exception as e:
+            print(f"Groq API call error: {e}. Trying secondary LLM / fallback...")
+
+    # 2. Try OpenAI if configured
     if openai_key and len(openai_key.strip()) > 10:
         try:
-            import requests
+            import requests, json
             headers = {
                 "Authorization": f"Bearer {openai_key.strip()}",
                 "Content-Type": "application/json"
             }
             prompt = (
                 f"You are a fee collection intent analyzer for an educational institute.\n"
+                f"Today's Date: {today_str}.\n"
                 f"Student: {student_name}, Pending Amount: Rs. {pending_amount}.\n"
                 f"Caller spoke: '{speech_text}'.\n\n"
                 f"Extract in JSON with keys:\n"
@@ -159,7 +222,6 @@ def analyze_caller_speech(speech_text: str, student_name: str, pending_amount: f
             }
             res = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload, timeout=6)
             if res.status_code == 200:
-                import json
                 data = res.json()["choices"][0]["message"]["content"]
                 parsed = json.loads(data)
                 return {
@@ -167,10 +229,13 @@ def analyze_caller_speech(speech_text: str, student_name: str, pending_amount: f
                     "tentative_pay_date": parsed.get("tentative_pay_date"),
                     "summary_notes": parsed.get("summary_notes", speech_text),
                     "manual_followup": 1 if parsed.get("manual_followup") else 0,
-                    "bot_reply": parsed.get("bot_reply", "Thank you. We have recorded your response. Goodbye!")
+                    "bot_reply": parsed.get("bot_reply", "Thank you. We have recorded your response. Goodbye!"),
+                    "engine": "OpenAI (gpt-4o-mini)"
                 }
         except Exception as e:
-            print(f"LLM API call failed, falling back to rule-based: {e}")
+            print(f"OpenAI API call failed, falling back to rule-based: {e}")
 
-    # Fallback to smart rule-based NLP analyzer
-    return rule_based_extract(speech_text, student_name, pending_amount)
+    # 3. Fallback to smart rule-based NLP analyzer
+    fallback_res = rule_based_extract(speech_text, student_name, pending_amount)
+    fallback_res["engine"] = "Rule-based NLP"
+    return fallback_res

@@ -266,8 +266,10 @@ async def api_get_settings():
     all_s = get_all_settings()
     token = all_s.get("PLIVO_AUTH_TOKEN", "")
     t_token = all_s.get("TWILIO_AUTH_TOKEN", "")
+    g_token = all_s.get("GROQ_API_KEY", "")
     all_s["PLIVO_AUTH_TOKEN_MASKED"] = (token[:4] + "********") if len(token) > 5 else ""
     all_s["TWILIO_AUTH_TOKEN_MASKED"] = (t_token[:4] + "********") if len(t_token) > 5 else ""
+    all_s["GROQ_API_KEY_MASKED"] = (g_token[:7] + "..." + g_token[-4:]) if len(g_token) > 10 else ""
     return all_s
 
 class SettingsUpdate(BaseModel):
@@ -279,13 +281,14 @@ class SettingsUpdate(BaseModel):
     PLIVO_AUTH_TOKEN: Optional[str] = None
     PLIVO_PHONE_NUMBER: Optional[str] = None
     PUBLIC_WEBHOOK_URL: Optional[str] = None
+    GROQ_API_KEY: Optional[str] = None
     OPENAI_API_KEY: Optional[str] = None
 
 @app.post("/api/settings")
 async def api_update_settings(settings: SettingsUpdate):
     for k, v in settings.dict(exclude_unset=True).items():
         if v is not None:
-            if (k in ["PLIVO_AUTH_TOKEN", "TWILIO_AUTH_TOKEN"]) and v.strip() == "":
+            if (k in ["PLIVO_AUTH_TOKEN", "TWILIO_AUTH_TOKEN", "GROQ_API_KEY"]) and v.strip() == "":
                 continue
             set_setting(k, v.strip())
     return {"status": "success", "message": "Settings updated successfully."}

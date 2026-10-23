@@ -75,7 +75,8 @@ def init_db():
         "PLIVO_AUTH_TOKEN": "",
         "PLIVO_PHONE_NUMBER": "",
         "PUBLIC_WEBHOOK_URL": "",
-        "OPENAI_API_KEY": "",
+        "GROQ_API_KEY": os.getenv("GROQ_API_KEY", ""),
+        "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY", ""),
         "CALLING_THROTTLE_SECONDS": "5"
     }
     for k, v in defaults.items():
