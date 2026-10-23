@@ -1,0 +1,36 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files with private secrets
+.env
+*.env.local
+
+# SQLite database & data persistence (protects credentials and customer PII)
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary execution outputs
+*.log
+/tmp/
+
+# Legacy unrelated artifacts
+TAKAMATSU_CONSTRUCTION_GROUP_10-10_FINAL_MASTER_GUIDE.pdf
+TCG_10-10_FINAL_MASTER_GUIDE.pdf
+guide_render.html
+portfolio/
+user_original_pdf_text.txt
+xai_finance_agent.py
+script.py

@@ -1,0 +1,1309 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R] /Count 9 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 6865 >>
+stream
+0.080 0.180 0.360 rg
+45.00 671.89 505.28 120.00 re f
+0.220 0.550 0.850 rg
+45.00 667.89 505.28 4.00 re f
+0.750 0.880 1.000 rg
+BT /F2 9.0 Tf 65.00 761.89 Td (ENTERPRISE TECHNICAL ARCHITECTURE & WORKING SPECIFICATION) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 18.0 Tf 65.00 733.89 Td (Automated Voice AI Outbound Fee Collection System) Tj ET
+0.850 0.920 1.000 rg
+BT /F1 10.5 Tf 65.00 709.89 Td (Autonomous Outbound Dialer, Conversational Voice Bot & Disposition Reporting) Tj ET
+0.700 0.820 0.950 rg
+BT /F1 8.5 Tf 65.00 687.89 Td (Dataset Ingestion \(Excel/PDF\) -> Telephony \(Twilio/Plivo/Exotel\) -> LLM Reasoning -> Structured Output) Tj ET
+0.950 0.960 0.980 rg
+45.00 619.89 505.28 32.00 re f
+0.820 0.860 0.900 RG
+0.60 w
+45.00 619.89 505.28 32.00 re s
+0.150 0.250 0.400 rg
+BT /F2 8.5 Tf 57.00 637.89 Td (Target Domain: Educational Institutes / Universities / EdTech) Tj ET
+0.350 0.400 0.450 rg
+BT /F1 8.0 Tf 57.00 626.89 Td (Status: Production-Grade System Architecture Blueprint) Tj ET
+0.150 0.250 0.400 rg
+BT /F2 8.5 Tf 395.00 637.89 Td (Architecture Version: 1.0 \(Q4 2026\)) Tj ET
+0.350 0.400 0.450 rg
+BT /F1 8.0 Tf 395.00 626.89 Td (Telephony: Twilio / Plivo / Exotel) Tj ET
+0.080 0.220 0.450 rg
+45.00 593.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 597.89 Td (1. Executive Summary & Problem Definition) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 589.89 m 550.28 589.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 575.89 Td (Educational institutions, coaching academies, colleges, and schools face substantial operational friction) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 562.39 Td (in recovering overdue student tuition and term fees. Traditional collection relies on manual phone calls) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 548.89 Td (placed by front-office staff or accountants. This traditional approach suffers from high overhead, low) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 535.39 Td (dial volumes \(an agent manages only 40-60 calls/day\), lack of real-time structured data recording, and) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 521.89 Td (irregular follow-ups.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 504.39 Td (The proposed system solves this challenge end-to-end: it accepts tabular fee rosters from Excel) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 490.89 Td (spreadsheets or PDF ledger reports, parses parent and student records, and triggers automated,) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 477.39 Td (high-fidelity conversational voice calls. The voice agent states the pending balance and due date,) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 463.89 Td (requests a tentative payment date, or acknowledges prior payments. Responses are transcribed, parsed via) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 450.39 Td (LLM structured outputs into discrete schemas, and exported as updated spreadsheets and executive audit) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 436.89 Td (reports.) Tj ET
+0.960 0.970 0.990 rg
+45.00 313.39 505.28 114.00 re f
+0.080 0.220 0.450 rg
+45.00 313.39 4.00 114.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 313.39 505.28 114.00 re s
+0.080 0.220 0.450 rg
+BT /F2 10.0 Tf 57.00 409.39 Td (Core High-Level System Capabilities) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 395.39 Td (- Multi-Format Data Ingestion: Automated extraction from Excel \(.xlsx, .csv\) and PDF fee dues tables.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 381.89 Td (- Programmatic Outbound Calling: High-throughput batch dialer supporting Twilio, Plivo, and Exotel.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 368.39 Td (- Human-Grade Spoken Conversation: Indian-accented English, Hindi, or bilingual natural language comprehension.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 354.89 Td (- Real-Time Speech Understanding: Fast STT + LLM reasoning for date entity extraction, disputes, and excuses.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 341.39 Td (- Automated Edge-Case Resolution: Handles answering machines, busy signals, wrong numbers, and installments.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 327.89 Td (- Closed-Loop Output Generation: Real-time database logging, updated Excel record generation, and summary PDF exports.) Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 291.39 Td (System High-Level Metrics & Targets) Tj ET
+0.100 0.220 0.420 rg
+45.00 257.39 505.28 18.00 re f
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 50.00 263.39 Td (Metric / KPI) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 160.00 263.39 Td (Industry Benchmark \(Manual\)) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 290.00 263.39 Td (AI Voice System Target) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 420.00 263.39 Td (Operational Impact) Tj ET
+1.000 1.000 1.000 rg
+45.00 241.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 245.89 Td (Dialing Speed) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 245.89 Td (35 - 50 calls / staff / day) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 290.00 245.89 Td (500 - 5,000+ calls / hour) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 420.00 245.89 Td (100x throughput multiplier) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 241.39 m 550.28 241.39 l s
+0.960 0.970 0.980 rg
+45.00 225.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 229.89 Td (Average Cost Per Call) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 229.89 Td (Rs. 25.00 - Rs. 40.00 \(Staff labor\)) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 290.00 229.89 Td (Rs. 1.20 - Rs. 2.50 \(Telephony+AI\)) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 420.00 229.89 Td (90%+ cost reduction) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 225.39 m 550.28 225.39 l s
+1.000 1.000 1.000 rg
+45.00 209.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 213.89 Td (Intent Extraction Accuracy) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 213.89 Td (60-70% \(Subjective notes\)) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 290.00 213.89 Td (94% - 98% \(Structured LLM\)) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 420.00 213.89 Td (Uniform audit-ready records) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 209.39 m 550.28 209.39 l s
+0.960 0.970 0.980 rg
+45.00 193.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 197.89 Td (Follow-Up Latency) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 197.89 Td (2 - 5 days manual delay) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 290.00 197.89 Td (Instant \(Within 10 seconds\)) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 420.00 197.89 Td (Zero lag in accounts ledger) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 193.39 m 550.28 193.39 l s
+0.750 0.800 0.850 RG
+0.80 w
+45.00 193.39 505.28 82.00 re s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 1 of 9) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 6126 >>
+stream
+0.080 0.220 0.450 rg
+45.00 777.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 781.89 Td (2. System Architecture & Component Decomposition) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 773.89 m 550.28 773.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 759.89 Td (The system follows an event-driven, decoupled microservices architecture divided into five distinct) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 746.39 Td (operational tiers. This separation guarantees modularity, allowing independent scaling of telephony) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 732.89 Td (workers, LLM reasoning pipelines, and data export jobs without resource contention.) Tj ET
+0.940 0.950 0.970 rg
+45.00 528.89 505.28 190.50 re f
+0.800 0.830 0.870 RG
+0.80 w
+45.00 528.89 505.28 190.50 re s
+0.100 0.300 0.550 rg
+BT /F4 8.5 Tf 55.00 707.39 Td (Fig 1: End-to-End System Block Diagram) Tj ET
+0.820 0.850 0.880 RG
+0.50 w
+45.00 703.39 m 550.28 703.39 l s
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 695.39 Td (+---------------------------------------------------------------------------------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 683.89 Td (|                                     SYSTEM ARCHITECTURE TOPOLOGY                                  |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 672.39 Td (+---------------------------------------------------------------------------------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 660.89 Td ( [INPUT FILES]            [ORCHESTRATION]                [TELEPHONY GATEWAY]        [VOICE AI CORE]  ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 649.39 Td (  - Excel \(.xlsx\)   -->    FastAPI Server     --REST-->   Twilio / Exotel     <-->   Deepgram \(STT\)   ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 637.89 Td (  - PDF Ledgers     -->    Redis Task Queue               SIP / WebSockets           GPT-4o / Llama-3 ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 626.39 Td (  - CRM Webhooks    -->    Campaign Dispatch              TwiML Stream / AMD         ElevenLabs \(TTS\) ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 614.89 Td (+---------------------------------------------------------------------------------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 603.39 Td (                                                 |                                                  ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 591.89 Td (                                                 v \(Post-Call Webhook & Transcript\)                 ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 580.39 Td ( [EXTRACTION & DISPOSITION]               [DATA PERSISTENCE]                [OUTPUT & REPORTING]    ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 568.89 Td (  - Pydantic Extractor              -->    PostgreSQL / SQLite         -->   Updated Excel \(.xlsx\)  ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 557.39 Td (  - Intent & Date Normalizer               Audit Event Logs                  Executive PDF Summary  ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 545.89 Td (  - Flag Manual Review Queue               Call Recording Audio              Accounts Webhook Push  ) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 534.39 Td (+---------------------------------------------------------------------------------------------------+) Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 514.89 Td (Detailed Component Breakdown) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 498.89 Td (-  Tier 1 - Data Ingestion & Normalization: Accepts unstructured or tabular fee lists. Validates phone) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 485.89 Td (numbers to E.164 international format \(+91XXXXXXXXXX\), strips currency symbols, parses due dates into) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 472.89 Td (ISO-8601, and deduplicates records against active campaigns.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 457.89 Td (-  Tier 2 - Campaign Dispatcher & Throttling Engine: Manages concurrent call limits to adhere to telecom) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 444.89 Td (carrier rate limits \(e.g., 5-20 CPS - Calls Per Second\). Implements regulatory time-window enforcement) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 431.89 Td (\(e.g., calling strictly between 10:00 AM and 07:00 PM local time\).) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 416.89 Td (-  Tier 3 - Telephony Gateway \(SIP / WebSockets\): Interfaces with Twilio, Plivo, or Exotel. Employs) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 403.89 Td (Answering Machine Detection \(AMD\) to identify human pickup vs. voicemail. When a human answers, it opens a) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 390.89 Td (bi-directional audio stream or TwiML Gather connection.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 375.89 Td (-  Tier 4 - Real-Time Conversational AI Engine: Orchestrates Speech-to-Text \(STT\), conversational reasoning) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 362.89 Td (\(LLM\), and Text-to-Speech \(TTS\). Supports dynamic barge-in \(caller interruption\) so the parent can speak) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 349.89 Td (immediately without waiting for the bot to finish.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 334.89 Td (-  Tier 5 - Extraction, Analytics & Reporting Engine: Parses call transcripts into structured JSON \(payment) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 321.89 Td (status, tentative date, disputes\). Updates the source Excel sheet with call outcomes and compiles a) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 308.89 Td (presentation-grade management PDF report.) Tj ET
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 2 of 9) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 5947 >>
+stream
+0.080 0.220 0.450 rg
+45.00 777.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 781.89 Td (3. Step-by-Step System Working & Operational Flow) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 773.89 m 550.28 773.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 759.89 Td (The operational lifecycle of a fee collection campaign executes across seven synchronized phases. The) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 746.39 Td (diagram and detailed walkthrough below specify exact triggers, data transformations, and state) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 732.89 Td (transitions.) Tj ET
+0.940 0.950 0.970 rg
+45.00 551.89 505.28 167.50 re f
+0.800 0.830 0.870 RG
+0.80 w
+45.00 551.89 505.28 167.50 re s
+0.100 0.300 0.550 rg
+BT /F4 8.5 Tf 55.00 707.39 Td (Fig 2: Campaign Lifecycle Sequence) Tj ET
+0.820 0.850 0.880 RG
+0.50 w
+45.00 703.39 m 550.28 703.39 l s
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 695.39 Td (  [1. Input Upload]    --> Admin uploads 'fees_defaulters_october.xlsx' or 'dues_ledger.pdf'.) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 683.89 Td (           |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 672.39 Td (  [2. Validation]      --> Regex check phone numbers \(+91\), verify non-zero amounts, deduplicate.) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 660.89 Td (           |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 649.39 Td (  [3. Batch Dispatch]  --> Push contacts to Redis Queue. Throttled dispatcher triggers calls via Twilio/Exotel.) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 637.89 Td (           |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 626.39 Td (  [4. Pickup & AMD]    --> Answering Machine Detection: If voicemail -> drop reminder; If human -> connect AI.) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 614.89 Td (           |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 603.39 Td (  [5. Spoken Dialogue] --> Bot greets caller, presents pending fee & due date, asks for payment commitment.) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 591.89 Td (           |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 580.39 Td (  [6. AI Extraction]   --> LLM analyzes transcript: extracts outcome, tentative date, and dispute notes.) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 568.89 Td (           |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 557.39 Td (  [7. Output Delivery] --> System writes 'call_disposition_report.xlsx' and builds executive summary PDF.) Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 537.89 Td (Operational Stage Walkthrough) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 521.89 Td (-  Stage 1 - Ingestion & Schema Mapping:  The admin uploads an Excel file with columns \(Student_Name,) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 508.89 Td (Parent_Name, Mobile_Number, Amount_Due, Due_Date, Institute_Name\). The parser validates each row. Missing) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 495.89 Td (phone numbers or invalid values are isolated in an error log.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 480.89 Td (-  Stage 2 - Call Scheduling & Throttling:  The dispatcher queries the queue and regulates dialing pace. If) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 467.89 Td (1,000 parents are in the list, the system dials at a controlled concurrency \(e.g., 10 parallel channels\) to) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 454.89 Td (avoid telephony trunk saturation and ensure cloud server stability.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 439.89 Td (-  Stage 3 - Call Pickup & Answering Machine Handling:  When the call rings and connects, the telephony) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 426.89 Td (carrier's AMD algorithm analyzes the initial audio packet: if an automated voicemail or IVR is detected,) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 413.89 Td (the bot leaves a concise payment notice and terminates. If human voice is detected, the conversational) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 400.89 Td (session begins.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 385.89 Td (-  Stage 4 - Dialogue Execution & Dynamic Prompting:  The system dynamically injects row variables into the) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 372.89 Td (conversational prompt: 'Hello Mr. Sharma, this is an automated reminder from Apex Institute. We notice an) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 359.89 Td (overdue fee of Rs. 14,500 for Rahul Sharma, due on October 15th. Could you provide a tentative date when) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 346.89 Td (you will pay, or let us know if already paid?') Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 331.89 Td (-  Stage 5 - Response Capture & Classification:  The parent's spoken response is streamed to the) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 318.89 Td (Speech-to-Text model. A structured LLM parser categorizes the response into one of five formal disposition) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 305.89 Td (codes \(ALREADY_PAID, PROMISE_TO_PAY, DISPUTED, EXTENSION_REQUEST, or WRONG_NUMBER\).) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 290.89 Td (-  Stage 6 - Database Update & Disposition Tagging:  The system logs call metadata \(Call SID, duration,) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 277.89 Td (timestamp, audio recording URL, full transcript, categorized outcome, and extracted tentative date\) into a) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 264.89 Td (centralized audit ledger.) Tj ET
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 3 of 9) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 14 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 7718 >>
+stream
+0.080 0.220 0.450 rg
+45.00 777.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 781.89 Td (4. Spoken Dialogue Logic & State Machine) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 773.89 m 550.28 773.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 759.89 Td (The conversational agent operates as a deterministic finite state machine \(FSM\) with dynamic LLM reasoning) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 746.39 Td (at each node. This ensures the bot never hallucinate non-existent fee figures while maintaining polite,) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 732.89 Td (natural dialogue.) Tj ET
+0.940 0.950 0.970 rg
+45.00 333.39 505.28 386.00 re f
+0.800 0.830 0.870 RG
+0.80 w
+45.00 333.39 505.28 386.00 re s
+0.100 0.300 0.550 rg
+BT /F4 8.5 Tf 55.00 707.39 Td (Fig 3: Conversational Finite State Machine \(FSM\)) Tj ET
+0.820 0.850 0.880 RG
+0.50 w
+45.00 703.39 m 550.28 703.39 l s
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 695.39 Td (                           +-------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 683.89 Td (                           |     STATE_INIT_CALL     |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 672.39 Td (                           +-------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 660.89 Td (                                        |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 649.39 Td (                                        v) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 637.89 Td (                           +-------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 626.39 Td (                           |  STATE_GREET_AND_INFORM |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 614.89 Td (                           +-------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 603.39 Td (                                        |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 591.89 Td (                     +------------------+------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 580.39 Td (                     |                                     |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 568.89 Td (                     v \(Caller says: 'Already Paid'\)       v \(Caller says: 'Will pay next week'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 557.39 Td (         +-----------------------+             +-----------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 545.89 Td (         |   STATE_HANDLE_PAID   |             |   STATE_EXTRACT_DATE  |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 534.39 Td (         +-----------------------+             +-----------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 522.89 Td (                     |                                     |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 511.39 Td (                     v                                     v) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 499.89 Td (    +---------------------------------+   +---------------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 488.39 Td (    | - Ask for transaction/UTR mode  |   | - Validate future date entity   |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 476.89 Td (    | - Confirm accounting audit      |   | - Confirm exact date with caller|) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 465.39 Td (    +---------------------------------+   +---------------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 453.89 Td (                     |                                     |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 442.39 Td (                     +------------------+------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 430.89 Td (                                        |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 419.39 Td (                                        v) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 407.89 Td (                           +-------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 396.39 Td (                           |   STATE_CLOSING_THANKS  |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 384.89 Td (                           +-------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 373.39 Td (                                        |) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 361.89 Td (                                        v) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 350.39 Td (                           +-------------------------+) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 338.89 Td (                           |      STATE_HANGUP       |) Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 319.39 Td (Dialogue Branching Scenarios & Handling) Tj ET
+0.960 0.970 0.990 rg
+45.00 239.39 505.28 72.00 re f
+0.120 0.550 0.240 rg
+45.00 239.39 4.00 72.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 239.39 505.28 72.00 re s
+0.120 0.550 0.240 rg
+BT /F2 10.0 Tf 57.00 293.39 Td (Branch 1: Parent Claims Already Paid) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 279.39 Td (- Spoken Input: 'I already paid Rs. 14,500 yesterday evening through Google Pay UPI.') Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 265.89 Td (- Bot Response: 'Thank you for updating us! We will verify this transaction with our accounts desk. Please retain your UPI receipt. Have a great day ahead.') Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 252.39 Td (- Extracted Output: { outcome: 'ALREADY_PAID', tentative_date: null, verification_required: true, payment_mode: 'UPI/GPay' }) Tj ET
+0.960 0.970 0.990 rg
+45.00 165.39 505.28 72.00 re f
+0.150 0.350 0.600 rg
+45.00 165.39 4.00 72.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 165.39 505.28 72.00 re s
+0.150 0.350 0.600 rg
+BT /F2 10.0 Tf 57.00 219.39 Td (Branch 2: Parent Promises Future Date \(Promise to Pay\)) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 205.39 Td (- Spoken Input: 'My salary gets credited on the 7th of next month, so I will clear it by November 10th.') Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 191.89 Td (- Bot Response: 'Understood. We have logged your tentative payment date as November 10th. An SMS confirmation has been sent. Thank you for your time!') Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 178.39 Td (- Extracted Output: { outcome: 'PROMISE_TO_PAY', tentative_date: '2026-11-10', notes: 'Salary credited on 7th' }) Tj ET
+0.960 0.970 0.990 rg
+45.00 91.39 505.28 72.00 re f
+0.780 0.450 0.050 rg
+45.00 91.39 4.00 72.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 91.39 505.28 72.00 re s
+0.780 0.450 0.050 rg
+BT /F2 10.0 Tf 57.00 145.39 Td (Branch 3: Fee Dispute / Financial Hardship / Installment Request) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 131.39 Td (- Spoken Input: 'The amount is wrong, Rahul received a 30% merit scholarship which is not deducted.') Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 117.89 Td (- Bot Response: 'I apologize for the discrepancy. I have flagged your record for immediate manual review by our finance counselor. They will contact you shortly.') Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 104.39 Td (- Extracted Output: { outcome: 'DISPUTED', tentative_date: null, manual_follow_up: true, dispute_reason: 'Scholarship deduction pending' }) Tj ET
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 4 of 9) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 16 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 10856 >>
+stream
+0.080 0.220 0.450 rg
+45.00 777.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 781.89 Td (5. Data Schemas & Extraction Specifications) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 773.89 m 550.28 773.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 759.89 Td (To guarantee high reliability and seamless integration with existing school management ERPs \(e.g., Fedena,) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 746.39 Td (Salesforce Education Cloud, Tally, or custom portals\), all inputs and outputs adhere to strict schemas.) Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 722.89 Td (1. Input Dataset Schema \(Excel / CSV / PDF Table\)) Tj ET
+0.100 0.220 0.420 rg
+45.00 688.89 505.28 18.00 re f
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 50.00 694.89 Td (Field Name) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 145.00 694.89 Td (Type) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 200.00 694.89 Td (Required) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 260.00 694.89 Td (Sample Value) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 355.00 694.89 Td (Description) Tj ET
+1.000 1.000 1.000 rg
+45.00 672.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 677.39 Td (student_id) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 677.39 Td (String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 677.39 Td (Yes) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 677.39 Td (STU-2026-881) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 677.39 Td (Unique student enrollment identifier) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 672.89 m 550.28 672.89 l s
+0.960 0.970 0.980 rg
+45.00 656.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 661.39 Td (student_name) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 661.39 Td (String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 661.39 Td (Yes) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 661.39 Td (Rahul Sharma) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 661.39 Td (Full name of the student) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 656.89 m 550.28 656.89 l s
+1.000 1.000 1.000 rg
+45.00 640.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 645.39 Td (parent_name) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 645.39 Td (String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 645.39 Td (Yes) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 645.39 Td (Manoj Sharma) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 645.39 Td (Name of primary guardian / parent) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 640.89 m 550.28 640.89 l s
+0.960 0.970 0.980 rg
+45.00 624.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 629.39 Td (mobile_number) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 629.39 Td (String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 629.39 Td (Yes) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 629.39 Td (+919876543210) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 629.39 Td (E.164 phone number to be called) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 624.89 m 550.28 624.89 l s
+1.000 1.000 1.000 rg
+45.00 608.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 613.39 Td (pending_amount) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 613.39 Td (Float) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 613.39 Td (Yes) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 613.39 Td (14500.00) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 613.39 Td (Total unpaid overdue fee balance in INR) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 608.89 m 550.28 608.89 l s
+0.960 0.970 0.980 rg
+45.00 592.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 597.39 Td (due_date) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 597.39 Td (String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 597.39 Td (Yes) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 597.39 Td (2026-10-15) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 597.39 Td (Original fee deadline \(ISO-8601 YYYY-MM-DD\)) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 592.89 m 550.28 592.89 l s
+1.000 1.000 1.000 rg
+45.00 576.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 581.39 Td (institute_name) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 581.39 Td (String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 581.39 Td (Yes) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 581.39 Td (Apex Academy) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 581.39 Td (Name of school, college, or institute) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 576.89 m 550.28 576.89 l s
+0.960 0.970 0.980 rg
+45.00 560.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 565.39 Td (course_class) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 145.00 565.39 Td (String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 200.00 565.39 Td (Optional) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 565.39 Td (Grade 11 - PCM) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 355.00 565.39 Td (Class or academic batch) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 560.89 m 550.28 560.89 l s
+0.750 0.800 0.850 RG
+0.80 w
+45.00 560.89 505.28 146.00 re s
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 544.89 Td (2. LLM Post-Call Structured Extraction Model \(Pydantic\)) Tj ET
+0.940 0.950 0.970 rg
+45.00 284.89 505.28 248.00 re f
+0.800 0.830 0.870 RG
+0.80 w
+45.00 284.89 505.28 248.00 re s
+0.100 0.300 0.550 rg
+BT /F4 8.5 Tf 55.00 520.89 Td (Pydantic Schema for Guaranteed Extraction) Tj ET
+0.820 0.850 0.880 RG
+0.50 w
+45.00 516.89 m 550.28 516.89 l s
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 508.89 Td (from pydantic import BaseModel, Field) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 497.39 Td (from typing import Optional, Literal) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 485.89 Td () Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 474.39 Td (class CallDispositionExtraction\(BaseModel\):) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 462.89 Td (    outcome: Literal[) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 451.39 Td (        'ALREADY_PAID',       # Caller states fee is already paid) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 439.89 Td (        'PROMISE_TO_PAY',     # Caller provided a future tentative payment date) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 428.39 Td (        'EXTENSION_REQUEST',  # Caller asked for installment or financial extension) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 416.89 Td (        'DISPUTED',           # Caller disputes amount or fees policy) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 405.39 Td (        'WRONG_NUMBER',       # Recipient denies association with student) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 393.89 Td (        'UNREACHABLE'         # Call failed, unanswered, or voicemail) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 382.39 Td (    ] = Field\(description='Primary call disposition outcome classification'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 370.89 Td (    tentative_pay_date: Optional[str] = Field\() Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 359.39 Td (        default=None, description='ISO date \(YYYY-MM-DD\) or explicit date mentioned by caller') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 347.89 Td (    \)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 336.39 Td (    payment_reference_mode: Optional[str] = Field\() Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 324.89 Td (        default=None, description='Payment channel if already paid \(e.g., UPI, NetBanking, Cash\)') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 313.39 Td (    \)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 301.89 Td (    summary_notes: str = Field\(description='Concise 1-sentence synopsis of caller statements'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 290.39 Td (    manual_followup_flag: bool = Field\(description='True if administrative intervention is required'\)) Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 270.89 Td (3. Output Report Schema \(Exported to Excel & PDF\)) Tj ET
+0.100 0.220 0.420 rg
+45.00 236.89 505.28 18.00 re f
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 50.00 242.89 Td (Output Column) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 160.00 242.89 Td (Source) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 270.00 242.89 Td (Format) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 410.00 242.89 Td (Analytical Utility) Tj ET
+1.000 1.000 1.000 rg
+45.00 220.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 225.39 Td (Call_Status) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 225.39 Td (Telephony Gateway) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 270.00 225.39 Td (COMPLETED / BUSY / NO_ANSWER) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 410.00 225.39 Td (Telephony success analysis) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 220.89 m 550.28 220.89 l s
+0.960 0.970 0.980 rg
+45.00 204.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 209.39 Td (Disposition_Code) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 209.39 Td (LLM Extraction) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 270.00 209.39 Td (PROMISE_TO_PAY / ALREADY_PAID) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 410.00 209.39 Td (Financial pipeline forecasting) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 204.89 m 550.28 204.89 l s
+1.000 1.000 1.000 rg
+45.00 188.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 193.39 Td (Tentative_Date) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 193.39 Td (LLM Extraction) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 270.00 193.39 Td (YYYY-MM-DD / N/A) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 410.00 193.39 Td (Cash flow scheduling & follow-ups) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 188.89 m 550.28 188.89 l s
+0.960 0.970 0.980 rg
+45.00 172.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 177.39 Td (Full_Transcript) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 177.39 Td (STT Engine) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 270.00 177.39 Td (Text String) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 410.00 177.39 Td (Legal compliance & quality audit) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 172.89 m 550.28 172.89 l s
+1.000 1.000 1.000 rg
+45.00 156.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 161.39 Td (Manual_Flag) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 161.39 Td (Rule Engine) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 270.00 161.39 Td (TRUE / FALSE) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 410.00 161.39 Td (Filters prioritized queue for counselors) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 156.89 m 550.28 156.89 l s
+0.750 0.800 0.850 RG
+0.80 w
+45.00 156.89 505.28 98.00 re s
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 5 of 9) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 18 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+18 0 obj
+<< /Length 6586 >>
+stream
+0.080 0.220 0.450 rg
+45.00 777.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 781.89 Td (6. Open-Source GitHub References & Tech Stack Comparison) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 773.89 m 550.28 773.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 759.89 Td (Rather than inventing voice streaming protocols from scratch, production systems leverage proven) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 746.39 Td (open-source voice orchestration engines. The table below analyzes the top GitHub repositories for this use) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 732.89 Td (case.) Tj ET
+0.100 0.220 0.420 rg
+45.00 697.39 505.28 18.00 re f
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 50.00 703.39 Td (Framework) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 130.00 703.39 Td (GitHub Repository) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 260.00 703.39 Td (Architecture Focus) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 390.00 703.39 Td (Recommended Application) Tj ET
+1.000 1.000 1.000 rg
+45.00 681.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 685.89 Td (Bolna) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 130.00 685.89 Td (bolna-ai/bolna) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 685.89 Td (Outbound Voice Campaigns) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 390.00 685.89 Td (Top Pick: Dedicated outbound dialer with built-in intent extraction.) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 681.39 m 550.28 681.39 l s
+0.960 0.970 0.980 rg
+45.00 665.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 669.89 Td (Pipecat AI) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 130.00 669.89 Td (pipecat-ai/pipecat) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 669.89 Td (Real-Time Pipeline \(WebSockets\)) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 390.00 669.89 Td (Best for ultra-low latency \(<500ms\) and dynamic caller barge-in.) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 665.39 m 550.28 665.39 l s
+1.000 1.000 1.000 rg
+45.00 649.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 653.89 Td (Twilio Agent) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 130.00 653.89 Td (twilio/twilio-agent-connect-python) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 653.89 Td (Twilio Native Connect) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 390.00 653.89 Td (Official Twilio scaffolding for OpenAI Realtime & ConversationRelay.) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 649.39 m 550.28 649.39 l s
+0.960 0.970 0.980 rg
+45.00 633.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 637.89 Td (Deepgram Agent) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 130.00 637.89 Td (deepgram-devs/deepgram-voice-agent...) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 637.89 Td (Telephony + AMD) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 390.00 637.89 Td (Specialized in answering machine detection & voicemail drops.) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 633.39 m 550.28 633.39 l s
+1.000 1.000 1.000 rg
+45.00 617.39 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 621.89 Td (Vocode) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 130.00 621.89 Td (vocodedev/vocode-python) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 260.00 621.89 Td (Conversational State Agent) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 390.00 621.89 Td (Python framework for phone calls, synthesis, and memory hooks.) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 617.39 m 550.28 617.39 l s
+0.750 0.800 0.850 RG
+0.80 w
+45.00 617.39 505.28 98.00 re s
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 601.39 Td (Comparative Voice Stack Tradeoffs) Tj ET
+0.960 0.970 0.990 rg
+45.00 507.39 505.28 86.00 re f
+0.120 0.550 0.240 rg
+45.00 507.39 4.00 86.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 507.39 505.28 86.00 re s
+0.120 0.550 0.240 rg
+BT /F2 10.0 Tf 57.00 575.39 Td (Architecture Option A: Twilio <Gather speech> \(Fastest to Deploy & Lowest Cost\)) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 561.39 Td (- Mechanism: Twilio handles STT natively via <Gather input='speech'> and posts transcript to a FastAPI webhook.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 547.89 Td (- Latency: 1.2s - 1.8s per turn \(Turn-based half-duplex\).) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 534.39 Td (- Cost: ~$0.02 - $0.03 / min \(Telephony\) + $0.001 \(LLM\). Zero GPU infrastructure required.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 520.89 Td (- Verdict: Ideal for straightforward payment collection where the bot asks one question and records the answer.) Tj ET
+0.960 0.970 0.990 rg
+45.00 419.39 505.28 86.00 re f
+0.150 0.350 0.600 rg
+45.00 419.39 4.00 86.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 419.39 505.28 86.00 re s
+0.150 0.350 0.600 rg
+BT /F2 10.0 Tf 57.00 487.39 Td (Architecture Option B: Pipecat / Bolna WebSockets \(Full Duplex with Barge-In\)) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 473.39 Td (- Mechanism: Twilio Media Streams send 8kHz mulaw audio over WebSockets to Deepgram Nova-2 -> LLM -> Cartesia TTS.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 459.89 Td (- Latency: 350ms - 600ms \(Real-time natural conversation\).) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 446.39 Td (- Cost: ~$0.05 - $0.09 / min \(STT + LLM + TTS + Telephony\).) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 432.89 Td (- Verdict: Recommended if callers frequently interrupt, ask complex fee questions, or require fluid human-like speech.) Tj ET
+0.960 0.970 0.990 rg
+45.00 331.39 505.28 86.00 re f
+0.780 0.450 0.050 rg
+45.00 331.39 4.00 86.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 331.39 505.28 86.00 re s
+0.780 0.450 0.050 rg
+BT /F2 10.0 Tf 57.00 399.39 Td (Architecture Option C: OpenAI Realtime / Gemini Live Telephony Bridge) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 385.39 Td (- Mechanism: Direct speech-to-speech audio streaming through Twilio Media Streams.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 371.89 Td (- Latency: ~400ms end-to-end.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 358.39 Td (- Cost: ~$0.20 - $0.35 / min \(Higher API pricing\).) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 344.89 Td (- Verdict: Excellent conversational nuance, but currently more expensive for high-volume automated debt campaigns.) Tj ET
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 6 of 9) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 20 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+20 0 obj
+<< /Length 928 >>
+stream
+0.080 0.220 0.450 rg
+45.00 777.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 781.89 Td (7. Production Implementation Code Blueprint) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 773.89 m 550.28 773.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 759.89 Td (Below is the complete, modular Python implementation for the FastAPI telephony controller, LLM extraction) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 746.39 Td (engine, and automated Excel/PDF output generator.) Tj ET
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 7 of 9) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 22 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+22 0 obj
+<< /Length 6721 >>
+stream
+0.940 0.950 0.970 rg
+45.00 110.89 505.28 685.00 re f
+0.800 0.830 0.870 RG
+0.80 w
+45.00 110.89 505.28 685.00 re s
+0.100 0.300 0.550 rg
+BT /F4 8.5 Tf 55.00 783.89 Td (FastAPI Outbound Call Handler) Tj ET
+0.820 0.850 0.880 RG
+0.50 w
+45.00 779.89 m 550.28 779.89 l s
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 771.89 Td (# server.py - FastAPI Voice Telephony & Extraction Controller) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 760.39 Td (import os) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 748.89 Td (from fastapi import FastAPI, Form, Response) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 737.39 Td (from twilio.twiml.voice_response import VoiceResponse, Gather) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 725.89 Td (from openai import OpenAI) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 714.39 Td (from pydantic import BaseModel) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 702.89 Td () Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 691.39 Td (app = FastAPI\(title='Fee Collection Voice Bot Server'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 679.89 Td (client = OpenAI\(api_key=os.getenv\('OPENAI_API_KEY'\)\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 668.39 Td () Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 656.89 Td (@app.post\('/voice/start'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 645.39 Td (async def voice_start\(student: str, amount: str, due: str, inst: str\):) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 633.89 Td (    vr = VoiceResponse\(\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 622.39 Td (    prompt = \() Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 610.89 Td (        f'Hello. This is an automated reminder from {inst}. ') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 599.39 Td (        f'Pending dues of rupees {amount} were due on {due} for student {student}. ') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 587.89 Td (        'Please specify when you will pay, or let us know if already paid.') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 576.39 Td (    \)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 564.89 Td (    gather = Gather\() Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 553.39 Td (        input='speech', speech_timeout='auto', timeout=7, language='en-IN',) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 541.89 Td (        action=f'/voice/process?student={student}&amount={amount}') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 530.39 Td (    \)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 518.89 Td (    gather.say\(prompt, voice='Polly.Aditi'\)  # Fluent Indian English) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 507.39 Td (    vr.append\(gather\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 495.89 Td (    vr.say\('No response received. We will follow up later. Thank you.'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 484.39 Td (    vr.hangup\(\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 472.89 Td (    return Response\(content=str\(vr\), media_type='application/xml'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 461.39 Td () Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 449.89 Td (@app.post\('/voice/process'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 438.39 Td (async def voice_process\(student: str, amount: str, SpeechResult: str = Form\(default=''\), CallSid: str = Form\(...\)\):) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 426.89 Td (    vr = VoiceResponse\(\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 415.39 Td (    if not SpeechResult:) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 403.89 Td (        vr.say\('Thank you. Our team will contact you. Goodbye.'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 392.39 Td (        vr.hangup\(\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 380.89 Td (        return Response\(content=str\(vr\), media_type='application/xml'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 369.39 Td () Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 357.89 Td (    # LLM Structured Extraction) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 346.39 Td (    parsed = client.beta.chat.completions.parse\() Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 334.89 Td (        model='gpt-4o-mini',) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 323.39 Td (        messages=[) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 311.89 Td (            {'role': 'system', 'content': 'Extract fee payment commitment status and tentative date.'},) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 300.39 Td (            {'role': 'user', 'content': f'Student: {student}, Due: {amount}. Caller said: {SpeechResult}'}) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 288.89 Td (        ],) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 277.39 Td (        response_format=CallDispositionExtraction) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 265.89 Td (    \).choices[0].message.parsed) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 254.39 Td () Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 242.89 Td (    # Dynamic Acknowledgment & Database Persistence) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 231.39 Td (    record_call_outcome\(CallSid, student, amount, SpeechResult, parsed\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 219.89 Td (    if parsed.outcome == 'ALREADY_PAID':) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 208.39 Td (        msg = 'Thank you for informing us. We will verify and update our records. Goodbye!') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 196.89 Td (    elif parsed.outcome == 'PROMISE_TO_PAY':) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 185.39 Td (        msg = f'Thank you. We have noted that you will pay on {parsed.tentative_pay_date}. Goodbye!') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 173.89 Td (    else:) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 162.39 Td (        msg = 'Thank you. We have recorded your notes for our accounts counselor. Goodbye!') Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 150.89 Td () Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 139.39 Td (    vr.say\(msg, voice='Polly.Aditi'\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 127.89 Td (    vr.hangup\(\)) Tj ET
+0.120 0.150 0.200 rg
+BT /F3 8.0 Tf 55.00 116.39 Td (    return Response\(content=str\(vr\), media_type='application/xml'\)) Tj ET
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 8 of 9) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 24 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+24 0 obj
+<< /Length 6431 >>
+stream
+0.080 0.220 0.450 rg
+45.00 777.89 4.00 18.00 re f
+0.080 0.220 0.450 rg
+BT /F2 15.0 Tf 55.00 781.89 Td (8. Legal Compliance, Telephony Regulations & Rollout Plan) Tj ET
+0.820 0.850 0.900 RG
+1.00 w
+45.00 773.89 m 550.28 773.89 l s
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 759.89 Td (Automated voice dialers are strictly regulated worldwide. Deploying this system requires strict adherence) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.5 Tf 45.00 746.39 Td (to telecommunications guidelines in India \(TRAI / DLT\) and global standards \(US TCPA / FCC\).) Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 722.89 Td (1. Indian Telephony Regulatory Framework \(TRAI & DLT\)) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 706.89 Td (-  DLT Registration \(Distributed Ledger Technology\): Under TRAI regulations, any commercial or) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 693.89 Td (institutional entity making automated calls or SMS in India must register their Principal Entity \(PE\) ID) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 680.89 Td (and Telemarketer \(TM\) ID on telecom DLT portals \(e.g., Jio, Airtel, Vodafone-Idea DLT\).) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 665.89 Td (-  Transactional Voice Category: Fee reminder calls are classified as Service Implicit / Transactional.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 652.89 Td (This allows dialing registered students even if their numbers are listed on the National Do Not Disturb) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 639.89 Td (\(NDND / NDNC\) registry, provided a pre-existing student relationship exists.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 624.89 Td (-  Permitted Calling Hours: Automated dialers must only operate between 09:00 AM and 08:00 PM local time.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 611.89 Td (The campaign dispatcher must enforce automatic queue suspension outside these hours.) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 596.89 Td (-  Consent & Audio Recording Disclosure: The call opening should incorporate a short disclosure: 'This call) Tj ET
+0.150 0.180 0.220 rg
+BT /F1 9.2 Tf 55.00 583.89 Td (is an automated notice from [Institute] and is recorded for quality and verification purposes.') Tj ET
+0.150 0.350 0.600 rg
+BT /F2 12.0 Tf 45.00 562.89 Td (2. Multi-Phase Production Rollout Plan) Tj ET
+0.100 0.220 0.420 rg
+45.00 528.89 505.28 18.00 re f
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 50.00 534.89 Td (Phase) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 160.00 534.89 Td (Timeline) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 230.00 534.89 Td (Milestones) Tj ET
+1.000 1.000 1.000 rg
+BT /F2 8.5 Tf 430.00 534.89 Td (Target Output) Tj ET
+1.000 1.000 1.000 rg
+45.00 512.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 517.39 Td (Phase 1: Ingestion & Parser) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 517.39 Td (Week 1) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 230.00 517.39 Td (Build Excel & PDF parsers, validate E.164 phone data) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 430.00 517.39 Td (Clean tested JSON dataset) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 512.89 m 550.28 512.89 l s
+0.960 0.970 0.980 rg
+45.00 496.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 501.39 Td (Phase 2: Telephony Prototype) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 501.39 Td (Week 2) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 230.00 501.39 Td (Set up Twilio/Exotel account, configure FastAPI webhooks) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 430.00 501.39 Td (Test call to internal numbers) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 496.89 m 550.28 496.89 l s
+1.000 1.000 1.000 rg
+45.00 480.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 485.39 Td (Phase 3: Real-Time AI Agent) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 485.39 Td (Week 3) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 230.00 485.39 Td (Integrate Deepgram/Polly + GPT-4o-mini structured parser) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 430.00 485.39 Td (Sub-800ms intent recognition) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 480.89 m 550.28 480.89 l s
+0.960 0.970 0.980 rg
+45.00 464.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 469.39 Td (Phase 4: Output Engine) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 469.39 Td (Week 4) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 230.00 469.39 Td (Build Excel updater & executive PDF generator) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 430.00 469.39 Td (Closed-loop automated reports) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 464.89 m 550.28 464.89 l s
+1.000 1.000 1.000 rg
+45.00 448.89 505.28 16.00 re f
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 50.00 453.39 Td (Phase 5: Pilot & Scale) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 160.00 453.39 Td (Week 5-6) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 230.00 453.39 Td (DLT approval, pilot with 200 real dues, full batch rollout) Tj ET
+0.180 0.200 0.250 rg
+BT /F1 8.2 Tf 430.00 453.39 Td (Production scale \(5k calls/day\)) Tj ET
+0.850 0.880 0.900 RG
+0.50 w
+45.00 448.89 m 550.28 448.89 l s
+0.750 0.800 0.850 RG
+0.80 w
+45.00 448.89 505.28 98.00 re s
+0.960 0.970 0.990 rg
+45.00 360.89 505.28 86.00 re f
+0.080 0.220 0.450 rg
+45.00 360.89 4.00 86.00 re f
+0.850 0.880 0.920 RG
+0.70 w
+45.00 360.89 505.28 86.00 re s
+0.080 0.220 0.450 rg
+BT /F2 10.0 Tf 57.00 428.89 Td (Summary Recommendation for Implementation) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 414.89 Td (- Step 1: Use Exotel or Plivo if deploying primarily in India for native TRAI/DLT caller-ID compliance.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 401.39 Td (- Step 2: Start with the Twilio <Gather> / Bolna architecture for simplicity and rapid 2-week deployment.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 387.89 Td (- Step 3: Connect PostgreSQL to archive all call audio recordings, raw STT logs, and audit timestamps.) Tj ET
+0.200 0.220 0.250 rg
+BT /F1 8.8 Tf 59.00 374.39 Td (- Step 4: Schedule weekly automated PDF summary dispatches to the Chief Financial Officer \(CFO\) and Dean.) Tj ET
+BT /F1 7.5 Tf 45.00 809.89 Td 0.45 0.50 0.55 rg (Automated Voice AI Outbound Fee Collection System | Technical Architecture) Tj ET
+0.85 0.88 0.92 RG 0.5 w 45.00 805.89 m 550.28 805.89 l s
+0.85 0.88 0.92 RG 0.5 w 45.00 36.00 m 550.28 36.00 l s
+BT /F1 7.5 Tf 45.00 25.00 Td 0.45 0.50 0.55 rg (CONFIDENTIAL & PROPRIETARY | AI VOICE CAMPAIGN ARCHITECTURE SPECIFICATION) Tj ET
+BT /F2 7.5 Tf 495.28 25.00 Td 0.30 0.35 0.40 rg (Page 9 of 9) Tj ET
+endstream
+endobj
+xref
+0 25
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000170 00000 n 
+0000000240 00000 n 
+0000000315 00000 n 
+0000000383 00000 n 
+0000000456 00000 n 
+0000000618 00000 n 
+0000007535 00000 n 
+0000007698 00000 n 
+0000013877 00000 n 
+0000014041 00000 n 
+0000020041 00000 n 
+0000020205 00000 n 
+0000027976 00000 n 
+0000028140 00000 n 
+0000039050 00000 n 
+0000039214 00000 n 
+0000045853 00000 n 
+0000046017 00000 n 
+0000046997 00000 n 
+0000047161 00000 n 
+0000053935 00000 n 
+0000054099 00000 n 
+trailer
+<< /Size 25 /Root 1 0 R >>
+startxref
+60583
+%%EOF
